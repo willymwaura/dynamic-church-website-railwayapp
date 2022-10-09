@@ -1,8 +1,10 @@
 
+from multiprocessing import Event
 from django.contrib import admin
-from .models import Feature
+from .models import Event, Sermon
 
 
 # Register your models here.
 
-admin.site.register(Feature)
+admin.site.register(Sermon)
+admin.site.register(Event)

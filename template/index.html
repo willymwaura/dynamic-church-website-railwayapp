@@ -86,6 +86,7 @@
 						</div> <!-- .row -->
 					</div> <!-- .container -->
 				</div> <!-- section -->
+{% for instance in sermons%}
 
 				<div class="fullwidth-block">
 					<div class="container">
@@ -97,33 +98,16 @@
 									<li>
 										
 										<div class="seremon-detail">
-											<h3 class="seremon-title"><a href="#">I believe in god with all my heart</a></h3>
+											<h3 class="seremon-title"><a href="#">{{instance.theme}}</a></h3>
 											<div class="seremon-meta">
-												<div class="pastor"><i class="fa fa-user"></i> Alan Ray</div>
-												<div class="date"><i class="fa fa-calendar"></i> 18 mar 2014</div>
+												<div class="pastor"><i class="fa fa-user"></i> {{instance.preacher}}</div>
+											
+												<div class="date"><i class="fa fa-calendar"></i> {{instance.date_today}}</div>
 											</div>
 										</div>
 									</li>
-									<li>
-										
-										<div class="seremon-detail">
-											<h3 class="seremon-title"><a href="#">Trusting in jesus and god</a></h3>
-											<div class="seremon-meta">
-												<div class="pastor"><i class="fa fa-user"></i> David Clark</div>
-												<div class="date"><i class="fa fa-calendar"></i> 18 mar 2014</div>
-											</div>
-										</div>
-									</li>
-									<li>
-										
-										<div class="seremon-detail">
-											<h3 class="seremon-title"><a href="#">Love your kids</a></h3>
-											<div class="seremon-meta">
-												<div class="pastor"><i class="fa fa-user"></i> anthony roberts</div>
-												<div class="date"><i class="fa fa-calendar"></i> 18 mar 2014</div>
-											</div>
-										</div>
-									</li>
+							
+								
 								</ul>
 
 								<div class="text-center">
@@ -134,6 +118,7 @@
 					</div> <!-- .container -->
 				</div> <!-- section -->
 			</main> <!-- .main-content -->
+{%endfor%}
 
 			
 			<footer class="site-footer">
