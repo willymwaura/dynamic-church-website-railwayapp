@@ -9,8 +9,8 @@
 		<title>CHRISTIAN CHURCH INTERNATIONAL</title>
 
 		<!-- Loading third party fonts -->
-		<link href="fonts/novecento-font/novecento-font.css" rel="stylesheet" type="text/css">
-		<link href="fonts/font-awesome.min.css" rel="stylesheet" type="text/css">
+		<link href="{% static 'fonts/novecento-font/novecento-font.css' %}" rel="stylesheet" type="text/css">
+		<link href="{% static 'fonts/font-awesome.min.css' %}" rel="stylesheet" type="text/css">
 
 		<!-- Loading main css file -->
         <link rel="stylesheet" href="{% static 'style.css' %}">
@@ -35,10 +35,9 @@
 					<div class="main-navigation">
 						<button class="menu-toggle"><i class="fa fa-bars"></i> Menu</button>
 						<ul class="menu">
-							<li class="menu-item"><a href="index.html">Homepage </a></li>
-							<li class="menu-item"><a href="#">Pastors</a></li>
-							<li class="menu-item"><a href="seremons.html">Sermons </a></li>
-							<li class="menu-item current-menu-item"><a href="events.html">Events </a></li>
+							<li class="menu-item"><a href="">Homepage </a></li>
+							<li class="menu-item"><a href="sermons">Sermons </a></li>
+							<li class="menu-item current-menu-item"><a href="events">Events </a></li>
 							
 							
 						</ul>
@@ -54,21 +53,13 @@
 						<div class="container">
 							<div class="slide-content">
 								<small class="slide-subtitle">CCI -NYACABA</small>
-								<h2 class="slide-title">Place with a real love</h2>
+								<h3 class="slide-subtitle">2022 Theme:Resounding the vision</h3>
 
 								
 							</div>
 						</div>
 					</li>
 
-					<li data-bg-image="{% static 'images/slide-1.jpg' %}">
-						<div class="container">
-							<div class="slide-content">
-								<small class="slide-subtitle">CCI -NYACABA</small>
-								<h2 class="slide-title">Place with a real love</h2>
-
-							</div>
-						</div>
 					</li>
 				</div>
 			</div>
@@ -99,80 +90,12 @@
 				<div class="fullwidth-block">
 					<div class="container">
 						<div class="row">
-							<div class="col-md-6">
-								<h2 class="section-title">Upcoming events</h2>
-								<ul class="event-list">
-									<li>
-										<a href="#">
-											<h3 class="event-title">africa mission trip</h3>
-											<span class="event-meta">
-												<span><i class="fa fa-calendar"></i>30 mar 2014</span>
-												<span><i class="fa fa-map-marker"></i> Africa</span>
-
-											</span>
-										</a>
-									</li>
-									<li>
-										<a href="#">
-											<h3 class="event-title">Bible school</h3>
-											<span class="event-meta">
-												<span><i class="fa fa-calendar"></i>30 mar 2014</span>
-												<span><i class="fa fa-map-marker"></i> Saint paul church</span>
-
-											</span>
-										</a>
-									</li>
-									<li>
-										<a href="#">
-											<h3 class="event-title">praying for kids</h3>
-											<span class="event-meta">
-												<span><i class="fa fa-calendar"></i>30 mar 2014</span>
-												<span><i class="fa fa-map-marker"></i> true church</span>
-
-											</span>
-										</a>
-									</li>
-									<li>
-										<a href="#">
-											<h3 class="event-title">love giving</h3>
-											<span class="event-meta">
-												<span><i class="fa fa-calendar"></i>30 mar 2014</span>
-												<span><i class="fa fa-map-marker"></i> St cathedral</span>
-
-											</span>
-										</a>
-									</li>
-									<li>
-										<a href="#">
-											<h3 class="event-title">god ont the vacation</h3>
-											<span class="event-meta">
-												<span><i class="fa fa-calendar"></i>30 mar 2014</span>
-												<span><i class="fa fa-map-marker"></i> greenie lake</span>
-
-											</span>
-										</a>
-									</li>
-									<li>
-										<a href="#">
-											<h3 class="event-title">homeless helping</h3>
-											<span class="event-meta">
-												<span><i class="fa fa-calendar"></i>30 mar 2014</span>
-												<span><i class="fa fa-map-marker"></i> Detroit city</span>
-
-											</span>
-										</a>
-									</li>
-								</ul>
-
-								<div class="text-center">
-									<a href="#" class="button">See all events</a>
-								</div>
-							</div>
+							
 							<div class="col-md-6">
 								<h2 class="section-title">Latest seremons</h2>
 								<ul class="seremon-list">
 									<li>
-										<img src="images/small-thumb-1.jpg" alt="">
+										
 										<div class="seremon-detail">
 											<h3 class="seremon-title"><a href="#">I believe in god with all my heart</a></h3>
 											<div class="seremon-meta">
@@ -182,7 +105,7 @@
 										</div>
 									</li>
 									<li>
-										<img src="images/small-thumb-2.jpg" alt="">
+										
 										<div class="seremon-detail">
 											<h3 class="seremon-title"><a href="#">Trusting in jesus and god</a></h3>
 											<div class="seremon-meta">
@@ -192,7 +115,7 @@
 										</div>
 									</li>
 									<li>
-										<img src="images/small-thumb-3.jpg" alt="">
+										
 										<div class="seremon-detail">
 											<h3 class="seremon-title"><a href="#">Love your kids</a></h3>
 											<div class="seremon-meta">
@@ -204,7 +127,7 @@
 								</ul>
 
 								<div class="text-center">
-									<a href="#" class="button">See all seremons</a>
+									<a href="sermons" class="button">See all seremons</a>
 								</div>
 							</div>
 						</div> <!-- .row -->
@@ -212,21 +135,25 @@
 				</div> <!-- section -->
 			</main> <!-- .main-content -->
 
+			
 			<footer class="site-footer">
 				<div class="container">
 					<div class="row">
 						<div class="col-md-4">
 							<div class="widget">
-								<h3 class="widget-title">Our address</h3>
-								<p>we are located in kiambu county ,juja constituency ,witeithie ward nyacaba </p>
+								<h3 class="widget-title">About us</h3>
+								<p>we are located in kiambu county ,juja constituency </p>
 								<ul class="address">
-									<li><i class="fa fa-map-marker"></i> 329 Church St, Garland, TX 75042</li>
-									<li><i class="fa fa-phone"></i> (425) 853 442 552</li>
-									<li><i class="fa fa-envelope"></i> info@yourchurch.com</li>
+									<a href="location"><li><i class="fa fa-map-marker"></i> view location</li></a>
+									<a href="https://www.facebook.com/CCINYACABA"><li><i class="fa fa-facebook"></i> Facebook </li></a>
+									<a href="https://www.youtube.com/channel/UCvBdp-VLziuGJNNCYsjl6Iw"><i class="fa fa-youtube"></i> YouTube</li></a>
 								</ul>
-								
+								<p class="colophon">Copyright 2022  CCI. All right reserved</p>
 							</div>
-							<p class="colophon">Copyright 2022  CCI. All right reserved</p>
+						</div>
+						
+							</div>
+							
 						</div>
 						
 						
