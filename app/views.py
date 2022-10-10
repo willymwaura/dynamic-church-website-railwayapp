@@ -6,11 +6,11 @@ from django.http import HttpResponse ,HttpResponseRedirect
 
 # Create your views here.
 def index(request):
-    sermons=Sermon.objects.all()
+    sermons=Sermon.objects.last()
 
     return render(request,"index.html",{"sermons":sermons})
 def home(request):
-    sermons=Sermon.objects.all()
+    sermons=Sermon.objects.last()
 
     return render(request,"index.html",{"sermons":sermons})
 def sermons(request):
