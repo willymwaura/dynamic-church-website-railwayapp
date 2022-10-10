@@ -26,8 +26,8 @@ SECRET_KEY = 'django-insecure-zxag74(6%jzp8*$z0x%6w**)(eo-4$7k+k88=b_a_c%58*&8!9
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
-
+ALLOWED_HOSTS = ["*"]
+CORS_ALLOWED_ORIGINS=['*']
 
 # Application definition
 
@@ -81,7 +81,9 @@ DATABASES = {
         'NAME': BASE_DIR / 'db.sqlite3',
     }
 }
+import dj_database_url
 
+DATABASES['default']=dj_database_url.config(conn_max_age=1800)
 
 # Password validation
 # https://docs.djangoproject.com/en/3.2/ref/settings/#auth-password-validators
