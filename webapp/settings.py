@@ -30,7 +30,7 @@ ALLOWED_HOSTS = ["*","https://web-production-7710.up.railway.app"]
 CORS_ALLOWED_ORIGINS=['*',"https://web-production-7710.up.railway.app"]
 
 # Application definition
-CSRF_TRUSTED_ORIGINS = ["https://web-production-7710.up.railway.app"]
+CSRF_TRUSTED_ORIGINS = ["https://christian-church-international-nyacaba.up.railway.app"]
 
 INSTALLED_APPS = [
     'django.contrib.admin',
