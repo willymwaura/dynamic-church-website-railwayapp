@@ -60,9 +60,10 @@
 						<div class="row">
 							<div class="content col-md-8">
 								<h2 class="section-title">Latest sermons</h2>
-{% for instance in sermons%}
+                           
 								<ul class="event-list large">
 									<li>
+										{% for instance in sermons%}
 										<div class="seremon-detail">
 											<h3 class="seremon-title"><a href="#">{{instance.theme}}</a></h3>
 											<div class="seremon-meta">
@@ -72,6 +73,7 @@
 											</div>
 											<p>{{instance.sermon_summary}}</p>
 										</div>
+										{%endfor%}
 									</li>
 							
 								
