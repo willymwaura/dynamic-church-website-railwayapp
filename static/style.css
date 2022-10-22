@@ -1212,11 +1212,11 @@ form input[type="submit"], form button, form input[type="reset"] {
       height: 0; }
     .hero .slides li {
       
-      width: 100%;
-      margin-right: -100%;
-      float: left;
-      min-height: 545px;
-      padding: 150px 0; }
+     
+      width: auto;
+      height: auto;
+      
+       }
     .hero .slides .slide-content {
       text-align: center;
       font-family: "Novecento Sans", "Raleway", "Noto Sans" "Open Sans", sans-serif;
@@ -1501,3 +1501,9 @@ ul.bullet {
   box-shadow: inset 0 2px 2px rgba(0, 0, 0, 0.2); }
 .contact-form textarea {
   min-height: 150px; }
+
+
+img{
+  width: 100%;
+  height: auto;
+}

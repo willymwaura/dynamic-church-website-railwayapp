@@ -26,8 +26,8 @@ SECRET_KEY = 'django-insecure-zxag74(6%jzp8*$z0x%6w**)(eo-4$7k+k88=b_a_c%58*&8!9
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ["*","https://web-production-7710.up.railway.app"]
-CORS_ALLOWED_ORIGINS=['*',"https://web-production-7710.up.railway.app"]
+ALLOWED_HOSTS = ["*","https://web-production-7710.up.railway.app","localhost"]
+CORS_ALLOWED_ORIGINS=['*',"https://web-production-7710.up.railway.app","localhost"]
 
 # Application definition
 CSRF_TRUSTED_ORIGINS = ["https://christian-church-international-nyacaba.up.railway.app"]
